@@ -1,453 +1,457 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="LucasBello">
 
-	<head>
-		<meta charset = "utf-8">
-		<meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-    />
-    <title>Home</title>
-    <script src="/panel-item.js"></script>
-    <link rel="stylesheet" href="/swiper-bundle.min.css">
-   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="three-dots.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" type = "text/css" href ="Home.css">
 
-    </div>
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" >-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css" type="text/css">
+    <!--<link rel="stylesheet" href="assets/css/parallax-hero.css">-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/nerd-fonts.css">
+    <link rel="stylesheet" href="assets/css/video.css">
 
-  </head>
+	<title>「υиρяєтєитiσυѕ¢σ∂єs」</title>
+    
 
-    <body id = "body">
+</head>
+<body class="side-panel-light has-loading-screen color-theme-brown">
 
-          <!-- Mob-section-start -->
-      <div class = "ursor">
-      <img src="/image/clay-banks-u27Rrbs9Dwc-unsplash.jpg" id="myVideo">
+    <!--PAGE-->
 
-        <div id="social-link">
-          <div class="inner">
-            <span><img src=""></span>
-              <div class = "icon-home">
-                <div class = "instagram">
-                  <a href="https://www.instagram.com/joel__jaimon/" title="Instagram">
-                  <img src="/icons/instagram-sketched.png">
-              
-                  </a>
+	<div id="page">
+		<div class="cd-background-wrapper">
+			<figure class="cd-floating-background">
+				<div class="base-layer dark-overlay">
+                    <div class="video">
+                        <iframe id="youtube-video" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                    <!--end video-->
                 </div>
-                <div class = "linkedin">
-                  <a href="https://www.linkedin.com/in/joel-jaimon/" title="LinkedIn">
-                  <img src="/icons/linkedin.png">
-                  
-                  </a>
-                </div>
-                <div class = "github">
-                  <a href="https://github.com/joel-jaimon" title="Github">
-                  <img src="/icons/github.png">
-                  
-                  </a>
-                </div>
-                
-              </div>
-          </div> 
+				<!--end layer-->
+				<div class="layer animate pointer-events-none" data-layer-depth="550"></div>
+				<!--end layer-->
+				<div class="layer animate" data-layer-depth="300">
+					<div id="content">
+                        <div class="content-wrapper">
+                            <div class="background-overlay"></div> <!-- Fundo semi-transparente -->
+                            <div class="container">
+                                <!--end brand-->
+                                <div class="heading">
+                                    <h1>Lucas Bello <br></h1>
+                                    <h2>Cloud Orchestrator<br>and Emerging Tech Explorer</h2>
+                                    <p>「¢σмρℓєχαя¢нιтє¢тυяєѕαвυѕινє」</p>
+                                </div>
+                                <!--end heading-->
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-subscribe">Curriculo</a>
+                                <a href="#" class="btn btn-border open-side-panel">Quem sou eu</a>
+                                <a href="#" class="btn btn-icon" id="mute-toggle" onclick="toggleVolumeControls()">
+                                    <span class="nerd-icon">&#xf011b;</span> <!-- Ícone do gato -->
+                                </a>
+                        
+                                <!-- Botões de Volume -->
+                                <a href="#" class="btn btn-border-volume-down volume-button hidden" id="volume-down" onclick="changeVolume(-10)">
+                                    -
+                                </a>
+                                <a href="#" class="btn btn-border-volume-up volume-button hidden" id="volume-up" onclick="changeVolume(10)">
+                                    +
+                                </a>
+                            </div>
+                            <!--end container-->
+                        </div>
+                        <!--end content-wrapper-->
+                        
+					</div>
+					<!--end content-->
+				</div>
+				<!--end layer-->
+			</figure>
+			<!--end cd-floating-background-->
+		</div>
+		<!--end cd-background-wrapper-->
+	</div>
+	<!--end page-->
+
+    <!--SIDE PANEL-->
+
+    <div class="side-panel">
+        <div class="nav-btn open-side-panel">
+            <i></i>
+            <i></i>
+            <i></i>
         </div>
-        <div class="home"><div id = "joeljaimon">
-          <div><img src="/image/My_Profile/brooke-cagle-kvKSL7B6eTo-unsplash.png" id ="hello_img"></div>
-          <div class="Hi"><a >A</a><a class="name-user">ngelina</a></div>
-          <div class="bio"><a>Student , Web Developer</a></div>
-        </div></div>
-      </div>
-      <div id = "Container"> 
-        
         <div class="wrapper">
-          <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-           </div>
-        <nav>
-        <div class = "logo">
-            <h4>My Portfolio</h4>
-          </div>
-          <ul class="nav-links">
-          <li><a href="#about-anchor" class="btn-flip"  data-front="About Me"></a></li>
-          <li><a href="#exp-anchor" class="btn-flip"  data-front="Experience"></a></li>
-          <li><a href="#achievement-anchor" class="btn-flip"  data-front="achievements"></a></li>
-          <li><a href="#skill-anchor" class="btn-flip"  data-front="skills"></a></li>
-          <li><a href="#contact-anchor" class="btn-flip"  data-front="contact"></a></li>
-          </ul>     
-          <div class="mob-button">
-            <div class="linea"></div>
-            <div class="lineb"></div>
-            <div class="linec"></div>
-          </div>
-        </nav>
-        </div>
-
-        <a id="about-anchor"></a>
-        
-        <about>
-          
-          <div>
-            
-            <img src="/image/My_Profile/peter-sjo-Nxy-6QwGMzA-unsplash.jpg">
-          </div>
-          <div class="about-content"><h1>About Me</h1><br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident excepturi adipisci sapiente iure culpa aperiam dolor quod nesciunt! Consequatur, sint ullam! Reiciendis, numquam perspiciatis quisquam sequi odit eos odio!</p></div>
-          
-          <span class="box-block-1"></span>
-          <span class="box-block-2"></span>
-          <span class="box-block-3"></span>
-        </about>
-        <a id="exp-anchor"></a>
-        <experience>
-          
-          <img src="/image/paul-gilmore-8kDOOrs608I-unsplash.jpg">
-          <div class="on-exp">
-            <h1>My Experience</h1>
-          <div id="exp-panel">
-            <div class="sec-exp">
-              <h1>Event Organiser<h1>
-                <img src="/icons/event.png">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum maiores nisi, vitae enim assumenda libero quasi cupiditate quo excepturi eligendi. Reprehenderit totam voluptate aliquid voluptates? Dignissimos beatae laboriosam rem.</p>
-            </div>
-
-            <div class="sec-exp">
-              <h1>Web Developer Intern<h1>
-                <img src="/icons/programming (1).png">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum maiores nisi, vitae enim assumenda libero quasi cupiditate quo excepturi eligendi. Reprehenderit totam voluptate aliquid voluptates? Dignissimos beatae laboriosam rem.</p>
-            </div>
-
-            <div class="sec-exp">
-              <h1>AI Intern<h1>
-                <img src="/icons/ai.png">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum maiores nisi, vitae enim assumenda libero quasi cupiditate quo excepturi eligendi. Reprehenderit totam voluptate aliquid voluptates? Dignissimos beatae laboriosam rem.</p>
-            </div>
-          </div>
-          </div>
-        </experience>
-        <a id="achievement-anchor"></a>
-        <achievements>
-          <h1>Achievement</h1>
-          <div class="certi-view">
-          <div class="certi">
-            <img src="/Certificates/1.jpg">
-            <div class="cert-sub">Sample Cert 1</div>
-          </div>
-          <div class="certi">
-            <img src="/Certificates/2.png">
-            <div class="cert-sub">Sample Cert 2</div>
-          </div>
-          <div class="certi">
-            <img src="/Certificates/3.png">
-            <div class="cert-sub">Sample Cert 3</div>
-          </div>
-          <div class="certi">
-            <img src="/Certificates/4.jpg">
-            <div class="cert-sub">Sample Cert 4</div>
-          </div>
-          <div class="certi">
-            <img src="/Certificates/5.png">
-            <div class="cert-sub">Sample Cert 5</div>
-          </div>
-          <div class="certi">
-            <img src="/Certificates/6.png">
-            <div class="cert-sub">Sample Cert 6</div>
-          </div>
-        </div>
-        </achievements>
-
-        <a id="skill-anchor"></a>
-        <skill>
-          <img src="/image/emile-perron-xrVDYZRGdw4-unsplash.jpg">
- 
-            <span class="box-block-5"></span>
-
-          <div id="skill-mod">
-          <div class= "pskill"><h1 class="ti">My Expertise</h1>
-            
-            <div class="Other-skills">
-              <a>HTML/CSS</a>
-              <div class="progress"><div class="skill m-1"></div></div>
-            </div>
-            <div class="Other-skills">
-              <a>JavaScript</a>
-              <div class="progress"><div class="skill m-2"></div></div>
-            </div>
-            <div class="Other-skills">
-              <a>Framework(Django)</a>
-              <div class="progress"><div class="skill m-3"></div></div>
-            </div>
-            <div class="Other-skills">
-              <a>Database(SQL)</a>
-              <div class="progress"><div class="skill m-4"></div></div>
-            </div>
-            <div class="Other-skills">
-              <a>HTML/CSS</a>
-              <div class="progress"><div class="skill m-5"></div></div>
-            </div>
-            <div class="Other-skills">
-              <a>JavaScript</a>
-              <div class="progress"><div class="skill m-6"></div></div>
-            </div>
-
-            </div>
-            </div>
-        </skill>
-    
-          </div>
-          <a id="contact-anchor"></a>
-          <div class="contact-me">
-  <div class="contact-me-content">
-  <div class="contact-title">
-    <a>Contact Me</a></div>
-  <div id="email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dummy@email.com">dummy@gmail.com</a></div>
-  <div class="contact-section">
-    
-    <div class="social">
-     
-      <div class = "con">
-        <a href="https://www.instagram.com/joel__jaimon/" title="Instagram">
-        <img src="/icons/instagram-sketched.png">
-    
-        </a>
-      </div>
-      <div class = "con">
-        <a href="https://www.linkedin.com/in/joel-jaimon/" title="LinkedIn">
-        <img src="/icons/linkedin.png">
-        
-        </a>
-      </div>
-      <div class = "con">
-        <a href="https://github.com/joel-jaimon" title="Github">
-        <img src="/icons/github.png">
-        </a>
-      </div>
-      </div>
-      <div id="license">Web Template By <a href="https://joeljaimon.herokuapp.com">Joel.</a> </div>
-    </div>
-
-  </div>
-</div>
-        </div>
-    <!-- Mob-section-end -->
-
-    <!-- PC-section-start -->
-    
-    <div class="swiper-container">
-      <div class="theme-but">
-      <button class="theme a-t" data-color="#c2213b"><a></a></button>
-      <button class="theme b-t" data-color="#02a8a0"><a></a></button>
-      <button class="theme c-t" data-color="#FB5252"><a></a></button>
-      </div>
-
-      <div class="cursor"></div>
-      <div class="swiper-wrapper">
-          <div class="swiper-slide homepage">
-            <img src="/image/clay-banks-u27Rrbs9Dwc-unsplash.jpg" id="myVideo">
-        <div id="social-link">
-          <div class="inner">
-            <span><img src=""></span>
-              <div class = "icon-home">
-                <div class = "instagram">
-                  <a href="https://www.instagram.com/joel__jaimon/" title="Instagram">
-                  <img src="/icons/instagram-sketched.png">
-              
-                  </a>
-                </div>
-                <div class = "linkedin">
-                  <a href="https://www.linkedin.com/in/joel-jaimon/" title="LinkedIn">
-                  <img src="/icons/linkedin.png">
-                  
-                  </a>
-                </div>
-                <div class = "github">
-                  <a href="https://github.com/joel-jaimon" title="Github">
-                  <img src="/icons/github.png">
-                  
-                  </a>
-                </div>
-                
-              </div>
-          </div> 
-        </div>
-        <div class="home"><div id = "joeljaimon">
-          <div><img src="/image/My_Profile/brooke-cagle-kvKSL7B6eTo-unsplash.png" id ="hello_img"></div>
-          <div class="Hi head"><a >A</a><a class="name-user">ngelina</a></div>
-          <div class="bio"><a>Student , Web Developer</a></div>
-        </div></div>
-        
-          </div>
-          <div class="swiper-slide aboutmes">
-            <about>
-          
-              <div>
-                
-                <img src="/image/My_Profile/peter-sjo-Nxy-6QwGMzA-unsplash.jpg">
-              </div>
-              <div><h1><a class="head">About Me</a></h1><br>
-              <p class="pmo"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident excepturi adipisci sapiente iure culpa aperiam dolor quod nesciunt! Consequatur, sint ullam! Reiciendis, numquam perspiciatis quisquam sequi odit eos odio!</a></p></div>
-              <span class="box-block-1"></span>
-              <span class="box-block-2"></span>
-              <span class="box-block-3"></span>
-            </about>
-          </div>
-          <div class="swiper-slide experience">
-            <experience>
-          
-              <img src="/image/paul-gilmore-8kDOOrs608I-unsplash.jpg">
-              <div class="on-exp">
-                <h1><a class="head">My Experience</a></h1>
-              <div id="exp-panel">
-                <div class="sec-exp">
-                  <h1>Event Organiser<h1>
-                    <img src="/icons/event.png">
-                    <p><a class="pmo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum maiores nisi, vitae enim assumenda libero quasi cupiditate quo excepturi eligendi. Reprehenderit totam voluptate aliquid voluptates? Dignissimos beatae laboriosam rem.</a></p>
-                </div>
-    
-                <div class="sec-exp">
-                  <h1>Web Developer Intern<h1>
-                    <img src="/icons/programming (1).png">
-                    <p><a class="pmo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum maiores nisi, vitae enim assumenda libero quasi cupiditate quo excepturi eligendi. Reprehenderit totam voluptate aliquid voluptates? Dignissimos beatae laboriosam rem.</a></p>
-                </div>
-    
-                <div class="sec-exp">
-                  <h1>AI Intern<h1>
-                    <img src="/icons/ai.png">
-                    <p><a class="pmo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum maiores nisi, vitae enim assumenda libero quasi cupiditate quo excepturi eligendi. Reprehenderit totam voluptate aliquid voluptates? Dignissimos beatae laboriosam rem.</a></p>
-                </div>
-              </div>
-              </div>
-            </experience>
-          </div>
-          <div class="swiper-slide achievements">
-            <achievements>
-              <h1><a class="head">Achievement</a></h1>
-              <div class="certi-view">
-              <div class="certi">
-                <img src="/Certificates/1.jpg">
-                <div class="cert-sub">Sample Cert 1</div>
-              </div>
-              <div class="certi">
-                <img src="/Certificates/2.png">
-                <div class="cert-sub">Sample Cert 2</div>
-              </div>
-              <div class="certi">
-                <img src="/Certificates/3.png">
-                <div class="cert-sub">Sample Cert 3</div>
-              </div>
-              <div class="certi">
-                <img src="/Certificates/4.jpg">
-                <div class="cert-sub">Sample Cert 4</div>
-              </div>
-              <div class="certi">
-                <img src="/Certificates/5.png">
-                <div class="cert-sub">Sample Cert 5</div>
-              </div>
-              <div class="certi">
-                <img src="/Certificates/6.png">
-                <div class="cert-sub">Sample Cert 6</div>
-              </div>
-            </div>
-            </achievements>
-          </div>
-          <div class="swiper-slide skillswipe">
-            <skill>
-              <img src="/image/emile-perron-xrVDYZRGdw4-unsplash.jpg">
-     
-                <span class="box-block-5"></span>
-    
-              <div id="skill-mod">
-              <div class= "pskill"><h1 class="ti"><a class="head">My Expertise</a></h1>
-                
-                <div class="Other-skills">
-                  <a>HTML/CSS</a>
-                  <div class="progress"><div class="skill m-1"></div></div>
-                </div>
-                <div class="Other-skills">
-                  <a>JavaScript</a>
-                  <div class="progress"><div class="skill m-2"></div></div>
-                </div>
-                <div class="Other-skills">
-                  <a>Framework(Django)</a>
-                  <div class="progress"><div class="skill m-3"></div></div>
-                </div>
-                <div class="Other-skills">
-                  <a>Database(SQL)</a>
-                  <div class="progress"><div class="skill m-4"></div></div>
-                </div>
-                <div class="Other-skills">
-                  <a>HTML/CSS</a>
-                  <div class="progress"><div class="skill m-5"></div></div>
-                </div>
-                <div class="Other-skills">
-                  <a>JavaScript</a>
-                  <div class="progress"><div class="skill m-6"></div></div>
-                </div>
-    
-                </div>
-                </div>
-            </skill>
-          </div>
-          <div class="swiper-slide">
-            <div class="contact-me">
-              <div class="contact-me-content">
-              <div class="contact-title">
-                <a class="head">Contact Me</a></div>
-              <div id="email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dummy@email.com">dummy@gmail.com</a></div>
-              <div class="contact-section">
-                
-                <div class="social">
-                 
-                  <div class = "con image-mouse">
-                    <a href="https://www.instagram.com/joel__jaimon/" title="Instagram">
-                    <img src="/icons/instagram-sketched.png">
-                
-                    </a>
-                  </div>
-                  <div class = "con image-mouse">
-                    <a href="https://www.linkedin.com/in/joel-jaimon/" title="LinkedIn">
-                    <img src="/icons/linkedin.png">
+            <div class="container-fluid">
+                <section>
+                    <h2>Bem-vindo ao meu hub!</h2>
+                    <p>
+                        Sou um <strong>Orquestrador de Nuvem</strong>, <strong>Engenheiro de DevOps e
+                            Confiabilidade de Sites (SRE)</strong>,
+                            com ampla experiência em transformar ambientes de alta complexidade em ecossistemas
+                            eficientes e robustos.
+                            <br>Como <strong>Visionário de Soluções Tecnológicas</strong>,
+                            lidero projetos de modernização de infraestrutura e automação de processos críticos para
+                            grandes corporações, desenvolvendo soluções que unem segurança, escalabilidade e um alinhamento
+                            perfeito com as necessidades de negócios.
+                    </p>
+                    <br>
+                    <p>
+                        Minha especialidade está em projetar e otimizar microsserviços em Kubernetes,
+                        garantindo que tudo opere como uma máquina bem ajustada nas principais plataformas de nuvem,
+                        incluindo <strong>AWS</strong>, <strong>Azure</strong> e <strong>Google Cloud</strong>.
+                        Como <strong>Mentor de Cibersegurança e Infraestrutura</strong>, sou impulsionado pela paixão de traduzir
+                        desafios complexos em arquiteturas de alta performance e resiliência, sempre com foco na evolução contínua e
+                        na exploração das mais recentes tecnologias emergentes.
+                    </p>                    
+                    </section>
+                    <section>
+                        <h2>Minha Jornada</h2>
+                        <div class="content-section">
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #4CAF50; font-weight: normal;">&#xf10fe;</span> Kubernauta</h4>
+                                <p>Como Kubernauta certificado (CKA, CKAD, CKS), tenho ampla experiência em liderar projetos de <strong>modernização e migração</strong> de Kubernetes em ambientes corporativos complexos. Minha carreira inclui a administração e orquestração de clusters de Kubernetes, garantindo <strong>alta disponibilidade, segurança,</strong> e <strong>escalabilidade</strong> em infraestruturas críticas. Trabalhei em migrações significativas, como a de Openshift para AKS, modernizando aplicações e integrando práticas de segurança de ponta. Meu foco é sempre garantir que os clusters funcionem como um universo bem orquestrado.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #FF9800; font-weight: normal;">&#xf121;</span> Código Limpo</h4>
+                                <p>Com anos de experiência em engenharia de software e infraestrutura, sou um <strong>defensor incansável</strong> de Código Limpo. Meu trabalho envolve a implementação de práticas de DevOps que garantem que cada <strong>pipeline CI/CD</strong> seja não apenas funcional, mas sustentável e escalável. O compromisso com a <strong>legibilidade</strong> e a <strong>manutenção do código</strong> está no centro do meu trabalho, e isso é validado por minha certificação em Azure DevOps (AZ-400), onde aplico técnicas de <strong>qualidade de código</strong> e <strong>governança</strong> em projetos de grande escala.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #2196F3; font-weight: normal;">&#xf07b6;</span> Mestre em Cloud Engineering & Architecture</h4>
+                                <p>Minha expertise como Mestre em Cloud Engineering & Architecture é embasada por meu mestrado e comprovada pela experiência prática em projetar e gerenciar <strong>infraestruturas robustas</strong> em AWS (certificação SAP-C02), Azure (certificação AZ-305) e Google Cloud (certificação PCA). Ao longo da minha trajetória, desenvolvi e implementei <strong>soluções escaláveis</strong> alinhadas às necessidades de negócios, abrangendo desde a configuração de <strong>redes virtuais seguras</strong> e <strong>políticas de compliance</strong> até o <strong>gerenciamento eficiente de custos</strong> e recursos. Com foco constante na otimização, garanto <strong>eficiência operacional</strong> e <strong>redução de despesas</strong>, entregando resultados significativos para grandes corporações.</p>
+                            </div>                            
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #9C27B0; font-weight: normal;">&#xef01;</span> DevOps Wizard</h4>
+                                <p>Sou um verdadeiro DevOps Wizard, conjurando <strong>automações poderosas</strong> com ferramentas como Terraform, Jenkins, e Azure DevOps. Com a certificação AWS DevOps Engineer – Professional (DOP-C02), projetei <strong>pipelines CI/CD</strong> que transformaram processos lentos em fluxos contínuos e eficientes, proporcionando entregas <strong>rápidas e seguras</strong>. Minha abordagem mágica para automação permite que times entreguem <strong>valor de forma confiável</strong>, sem sacrificar a qualidade.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #E91E63; font-weight: normal;">&#xea64;</span> Guardião CI/CD</h4>
+                                <p>Como Guardião CI/CD, sou responsável por implementar pipelines que garantem a <strong>integridade e a segurança</strong> do código, desde o commit até a produção. Minhas certificações em Kubernetes (CKA, CKAD) e a especialização em Helm Charts (SC104) me permitem proteger cada etapa do <strong>processo de entrega contínua</strong>, mantendo a qualidade e segurança como prioridade. Resolvo <strong>incidentes críticos</strong> com rapidez e cuido para que a automação seja sinônimo de <strong>eficiência e confiança</strong>.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #795548; font-weight: normal;">&#xf1062;</span> Terraformer</h4>
+                                <p>Meu papel como Terraformer envolve transformar infraestrutura física em <strong>código elegante e reutilizável</strong>, certificado pela HashiCorp (Terraform Associate). Tenho experiência em <strong>provisionar recursos em nuvem</strong>, automatizando processos e garantindo <strong>consistência</strong> em ambientes complexos. Meu trabalho inclui a criação de <strong>módulos Terraform</strong> que proporcionam <strong>flexibilidade e escalabilidade</strong>, otimizando o uso de recursos em grandes corporações.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #607D8B; font-weight: normal;">&#xf11f2;</span> Nuvem Segura</h4>
+                                <p>A <strong>segurança</strong> sempre foi um pilar central do meu trabalho. Com certificações como CISSP e CCSP, sou especializado em proteger ambientes em nuvem contra <strong>ameaças cibernéticas</strong>. Desde a implementação de políticas de acesso até a configuração de <strong>firewalls e criptografia</strong>, trabalho para assegurar que <strong>dados e sistemas</strong> estejam sempre protegidos. A <strong>conformidade</strong> com as melhores práticas de segurança é parte integrante das soluções que desenvolvo.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #FFC107; font-weight: normal;">&#xf0e7;</span> Optimizador</h4>
+                                <p>Como Optimizador, estou constantemente buscando maneiras de melhorar o <strong>desempenho</strong> e a <strong>eficiência</strong> de sistemas complexos. Minha experiência inclui <strong>análise de performance</strong>, ajustes de recursos, e implementação de <strong>práticas de observabilidade</strong> para garantir que tudo funcione da forma mais eficiente possível. Com minha certificação em DevOps e SRE (LFS261), lidero iniciativas que resultam em melhorias significativas na <strong>infraestrutura</strong>, otimizando processos e reduzindo custos operacionais.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #FF5722; font-weight: normal;">&#xf12d;</span> Educador</h4>
+                                <p>Como Educador, dedico-me a preparar a próxima geração de profissionais de tecnologia, focando em temas como <strong>cibersegurança</strong>, <strong>arquitetura de sistemas</strong> e <strong>infraestrutura em nuvem</strong>. Na maior instituição de ensino superior do Brasil especializada em Tecnologia da Informação, desenvolvo e leciono cursos de <strong>pós-graduação</strong>, criando módulos avançados que capacitam alunos a enfrentar os desafios da indústria moderna de TI. Meu trabalho inclui disciplinas como Arquitetura de Sistemas .Net, Java, Dev Leadership, e Inteligência Artificial para Desenvolvedores, sempre com um enfoque prático e alinhado às necessidades do mercado.</p>
+                                <p>Além disso, atuo na <strong>formação de especialistas</strong> em Cibersegurança em Nuvem, onde ensino estratégias de <strong>proteção de dados</strong> e <strong>segurança</strong> em ambientes cloud, aplicadas ao contexto forense. Minha missão é <strong>inspirar e equipar</strong> os alunos com conhecimento técnico e as melhores práticas de segurança, garantindo que estejam prontos para proteger sistemas complexos e inovar em suas futuras carreiras.</p>
+                            </div>
+                            <br>
+                            <div class="content-block">
+                                <h4><span class="icon-nerd" style="color: #3F51B5; font-weight: normal;">&#xf1b3;</span> Criador</h4>
+                                <p>Como Criador, busco transformar ideias inovadoras em <strong>soluções reais</strong> que impactam positivamente o mundo. Sou o <strong>fundador</strong> da startup Contrate Quem Migra, uma plataforma que conecta <strong>imigrantes qualificados</strong> a oportunidades de emprego, eliminando barreiras burocráticas e garantindo que suas <strong>habilidades</strong> sejam valorizadas de forma justa no mercado de trabalho. Utilizando <strong>tecnologia de ponta</strong>, desenvolvi algoritmos de correspondência que tornam o processo de recrutamento mais <strong>eficiente e inclusivo</strong>, ajudando empresas a encontrar talentos de alto nível enquanto promovem <strong>diversidade e inclusão</strong>.</p>
+                                <p>Além disso, lancei uma solução de <strong>Inteligência Artificial para Operações de TI (AIOps)</strong>, que automatiza o gerenciamento de incidentes e otimiza a performance de infraestruturas complexas. Esta tecnologia inovadora <strong>prevê falhas</strong> antes que ocorram, automatiza respostas a alertas e garante a <strong>estabilidade</strong> de ambientes críticos, ajudando empresas a manterem <strong>alta disponibilidade</strong> e <strong>eficiência operacional</strong>. Meu compromisso é usar a tecnologia para criar um <strong>impacto duradouro</strong>, desenvolvendo soluções que unem inovação com benefícios reais para a sociedade e os negócios.</p>
+                            </div>
+                        </div>
+                    </section>
                     
-                    </a>
-                  </div>
-                  <div class = "con image-mouse">
-                    <a href="https://github.com/joel-jaimon" title="Github">
-                    <img src="/icons/github.png">
-                    </a>
-                  </div>
-                  </div>
-                  
-                </div>
-                <div id="license" class="pmo" >Web Template By <a href="https://joeljaimon.herokuapp.com">Joel</a> </div>
-            
-              </div>
+                    <section>
+                            <section>
+                                <h2>Skills da Porra</h2>
+                            
+                                <!-- Skills Chave -->
+                                <div class="skill">
+                                    <h4>Infraestrutura em Nuvem</h4>
+                                    <aside>97%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-97"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Kubernetes & Orquestração de Contêineres</h4>
+                                    <aside>95%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-95"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>DevOps & CI/CD</h4>
+                                    <aside>93%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-93"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Segurança em Nuvem</h4>
+                                    <aside>88%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-88"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Arquitetura de Sistemas Distribuídos</h4>
+                                    <aside>92%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-92"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>SRE (Site Reliability Engineering)</h4>
+                                    <aside>91%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-91"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Código Limpo</h4>
+                                    <aside>90%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-90"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Automação</h4>
+                                    <aside>94%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-94"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Observabilidade</h4>
+                                    <aside>85%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-85"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Ensino</h4>
+                                    <aside>87%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-87"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                            
+                                <!-- Ferramentas -->
+                                <h3>Ferramentas</h3>
+                                <div class="skill">
+                                    <h4>Terraform</h4>
+                                    <aside>94%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-94"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Jenkins</h4>
+                                    <aside>90%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-90"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Azure DevOps</h4>
+                                    <aside>93%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-93"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Helm Charts</h4>
+                                    <aside>85%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-85"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>AWS</h4>
+                                    <aside>90%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-90"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Google Cloud Platform (GCP)</h4>
+                                    <aside>88%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-88"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Microsoft Azure</h4>
+                                    <aside>90%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-90"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Prometheus & Grafana</h4>
+                                    <aside>86%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-86"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>SIEM & Segurança em Nuvem</h4>
+                                    <aside>89%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-89"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Infraestrutura como Código (IaC)</h4>
+                                    <aside>92%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-92"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                            </section>                
+                            <section>
+                                <h2>Conecte-se Comigo</h2>
+                                <p>
+                                    <span class="icon-nerd">&#xf08c9;</span> Se você está em busca de estratégias para otimizar sua
+                                    infraestrutura e entregar valor de negócios com eficiência e segurança, estou pronto para contribuir
+                                    com soluções que realmente fazem a diferença!
+                                </p>
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <h3>E-mail</h3>
+                                            <address>
+                                                <a href="mailto:lucas.bello@yahoo.com.br">lucas.bello@yahoo.com.br</a>
+                                            </address>
+                                        </div>
+                                        <!--end col-sm-6-->
+                                        <div class="col-md-6 col-sm-6">
+                                            <h3>Social</h3>
+                                            <figure>
+                                                <a href="https://www.linkedin.com/in/lucas-valentim-bello-moro/" class="icon" target="_blank">
+                                                    <i class="icon-nerd-linkedin"></i>LinkedIn
+                                                </a>
+                                            </figure>
+                                            <figure>
+                                                <a href="https://github.com/LucasBello" class="icon" target="_blank">
+                                                    <i class="icon-nerd-github"></i>GitHub
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <!--end col-sm-6-->
+                                    </div>
+                                </section>
+                            </section>
+                            
+                <p class="copyright">(c) 2024 Lucas Bello. All Lefts Reserved - Redistribution of this reality prohibited
+                    by the laws of multiverse physics.
+                    Unauthorized time travel incurs in temporal paradox fees. No Schrödinger's cats were harmed in the making of this webpage.
+                </p>
             </div>
-          </div>
-      </div>
-      
-      <div class="swiper-pagination"></div>
-  </div>
-               <!-- PC-section-end -->
-  
-        <script src="/js/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            slidesPerView: 1,
-            spaceBetween: 30,
-            mousewheel: true,
-            keyboard: {
-                enabled: true,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-        });
-        </script>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/nav-mob.js"></script>
-        <script src ="js/nav-scroll.js"></script>
-        <script src="js/cursor.js"></script>
-        
-      </body>
+            <!--container-fluid-->
+        </div>
+    </div>
+    <!--end side-panel-->
+
+    <!--SUBSCRIBE MODAL-->
+
+	<div class="modal fade" id="modal-subscribe" tabindex="-1" role="dialog" aria-labelledby="modal-subscribe-label">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" data-background-image="assets/img/pattern.png">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="modal-subscribe-label">Portal Intergaláctico de Currículos</h3>
+				</div>
+                <!--end modal-header-->
+				<div class="modal-body">
+                    <p>
+                        Meu currículo na velocidade da luz! <br><br>
+                        Clique no botão abaixo para baixar o PDF mais atualizado do meu resumo profissional.
+                    </p>
+				</div>
+                <!--end modal-body-->
+                <div class="modal-footer">
+                    <a href="assets/curriculo.pdf" class="btn btn-primary" onclick="captureIP()">Baixar Currículo</a>
+                </div>
+                <!--modal-footer-->
+			</div>
+            <!--modal-content-->
+		</div>
+        <!--modal-dialog-->
+	</div>
+	<!--end modal-->
+
+	<script src="assets/js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>-->
+    <script src="assets/js/pace.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+	<!--<script src="assets/js/parallax-hero.js"></script>-->
+	<script src="assets/js/modernizr.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/jquery.fitvids.js"></script>
+	<script src="assets/js/custom.js"></script>
+    <script src="assets/js/video-control.js"></script>
+    <script src="assets/js/captureIP.js"></script>
+	<script type="text/javascript">
+        $(".video").fitVids();
+
+
+        var latitude = 34.038405;
+        var longitude = -117.946944;
+        var markerImage = "assets/img/map-marker.png";
+        var mapTheme = "light";
+        var mapElement = "map-contact";
+        google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme, mapElement));
+
+	</script>
+
+</body>
 </html>

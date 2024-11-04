@@ -1,0 +1,88 @@
+/* Importando a fonte FiraCodeNerdFont */
+@font-face {
+    font-family: 'FiraCodeNerdFont';
+    src: url('../fonts/FiraCodeNerdFontPropo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo do botão com ícone */
+.btn-icon {
+    position: relative;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background-color: transparent !important;
+    opacity: 1;
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Estilo do ícone usando FiraCodeNerdFont */
+.btn-icon .nerd-icon {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%) scale(1.5);
+    font-size: 1.6em;
+}
+
+/* Classe para ícones em geral */
+.icon-nerd {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal; /* Certifique-se de que o estilo da fonte seja normal */
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.icon-nerd-facebook:before {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal; /* Corrige o estilo para não ser itálico */
+    content: '\f16a'; 
+}
+
+.icon-nerd-linkedin:before {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal; /* Corrige o estilo para não ser itálico */
+    content: '\f033b';
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.icon-nerd-github:before {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal; /* Corrige o estilo para não ser itálico */
+    content: '\f09b';
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.icon-nerd-youtube:before {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal; /* Corrige o estilo para não ser itálico */
+    content: '\f16a';
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.icon-nerd-twitter:before {
+    font-family: 'FiraCodeNerdFont';
+    font-style: normal; /* Corrige o estilo para não ser itálico */
+    content: '\eb72';
+    font-size: 1.2em;
+    vertical-align: middle;
+}

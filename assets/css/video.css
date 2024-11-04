@@ -1,0 +1,49 @@
+/********
+--- V ---
+********/
+.video {
+    position: fixed; /* Mantém o vídeo fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#youtube-video {
+    position: absolute; /* Usar absolute para garantir que o vídeo preencha a área */
+    top: 50%; /* Posiciona o vídeo no centro vertical */
+    left: 50%; /* Posiciona o vídeo no centro horizontal */
+    width: 100%; /* Largura total da viewport */
+    height: 100%; /* Altura total da viewport */
+    transform: translate(-50%, -50%); /* Centraliza o vídeo */
+    border: none; /* Remove a borda padrão */
+}
+
+/* Para garantir que vídeos fluidos funcionem corretamente */
+.video .fluid-width-video-wrapper {
+    height: 100%; /* Mantém a altura total */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 767px) {
+    #youtube-video {
+        width: 300vw; /* Largura total da viewport */
+        height: 100vh; /* Altura total da viewport */
+        height: auto; /* Mantém a proporção */
+        min-height: 100vh; /* Garante que cubra a altura da viewport */
+        transform: translate(-50%, -50%) scale(1.5); /* Preenche a tela com zoom centrado */
+    }
+    /* Para mover o vídeo para a esquerda ou direita */
+    /* Para mover para a esquerda */
+    #youtube-video {
+        left: 20%; /* Ajuste este valor conforme necessário */
+        transform: translate(-20%, -50%) scale(1.5); /* Ajuste a translação para mover */
+    }
+    /* Para mover para a direita, descomente as linhas abaixo e comente a parte acima */
+    #youtube-video {
+        left: 80%; /* Ajuste este valor conforme necessário */
+        transform: translate(-80%, -50%) scale(1.5); /* Ajuste a translação para mover */
+    }
+}

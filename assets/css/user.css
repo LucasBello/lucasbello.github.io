@@ -1,0 +1,126 @@
+.btn.btn-border-volume-down {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 1px 3px;
+}
+
+.btn.btn-border-volume-up {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 1px 3px;
+}
+
+.hidden {
+    visibility: hidden; /* Torna invisível, mas ocupa espaço */
+    height: 0; /* Remove espaço */
+    transition: height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out; /* Transições */
+}
+
+.volume-button {
+    opacity: 0; /* Torna o botão invisível */
+    height: 50px; /* Defina uma altura fixa para os botões */
+    width:  50px; /* Defina uma altura fixa para os botões */
+    transform: translateY(20px); /* Mova o botão para baixo inicialmente */
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Transições para deslizar */
+    margin: 1px; /* Adiciona um pouco de espaço entre os botões */
+}
+
+.volume-button.visible {
+    opacity: 1; /* Torna o botão visível */
+    transform: translateY(0); /* Move o botão para a posição original */
+}
+
+/* Estilos modernos para a seção de acordes */
+.accordion {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion.active {
+    background-color: #f1f1f1;
+    color: #000;
+    border-color: #bbb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.panel {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #f9f9f9;
+    border-left: 2px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    margin-top: -1px;
+}
+
+.image img {
+    width: 100px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Adiciona um leve arredondamento aos cantos */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.heading-wrapper {
+    position: relative;
+    display: inline-block; /* Ajuste conforme necessário */
+}
+
+.background-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    border-radius: 10px; /* Ajuste o valor para bordas mais ou menos arredondadas */
+    z-index: -1; /* Coloca o quadrado atrás do texto */
+}
+
+.heading {
+    position: relative;
+    z-index: 1; /* Garante que o texto fique acima do fundo */
+    padding: 20px; /* Adiciona espaço interno, ajuste conforme necessário */
+    color: white; /* Cor do texto para melhor contraste */
+}
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    border-radius: 15px; /* Bordas arredondadas */
+    z-index: -1; /* Certifica-se de que o fundo fique atrás do conteúdo */
+}
+.small-image {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+.image-margin {
+    margin-top: 20px; /* Ajuste o valor para definir o espaçamento */
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+.brand {
+    padding-top: 20px; /* Ajuste o valor para mover a imagem mais para baixo */
+}
