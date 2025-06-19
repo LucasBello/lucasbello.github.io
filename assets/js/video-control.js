@@ -6,12 +6,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // Lista de IDs dos vídeos
 var videos = [
-    "Se3CcHCYVhI", // Vídeo 1
-    "MkD_nglel-Y", // Vídeo 2
-    "YEb3htZoPU4",  // Vídeo 3
-    "7YBnFURTjDE",  // Vídeo 4
-    "Xe4Cr0ZkyyA",  // Vídeo 5
-    "mN-pgnQ4H-s"   // Vídeo 6
+    "yajJ_QVIKwU"
+    //"Se3CcHCYVhI", // Vídeo 1
+    //"MkD_nglel-Y", // Vídeo 2
+    //"YEb3htZoPU4",  // Vídeo 3
+    //"7YBnFURTjDE",  // Vídeo 4
+    //"Xe4Cr0ZkyyA",  // Vídeo 5
+    //"mN-pgnQ4H-s"   // Vídeo 6
 ];
 
 // Seleciona um ID de vídeo aleatório
